@@ -10,7 +10,7 @@ source:
   sha256: "96ae85ae7b26b7da674d87de2870ba4d1964bca733ae4614587080b6358c3ba9"
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - ansi2html=ansi2html.converter:main
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
