@@ -1,5 +1,5 @@
 {% set name = "ansi2html" %}
-{% set version = "1.5.2" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: "96ae85ae7b26b7da674d87de2870ba4d1964bca733ae4614587080b6358c3ba9"
+  sha256: 0f124ea7efcf3f24f1f9398e527e688c9ae6eab26b0b84e1299ef7f94d92c596
 
 build:
-  number: 2
+  number: 0
   entry_points:
     - ansi2html=ansi2html.converter:main
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
   host:
