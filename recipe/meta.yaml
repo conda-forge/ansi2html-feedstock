@@ -47,8 +47,8 @@ about:
     ansi2html allows users to convert text with ANSI color codes
     to HTML or to Latex.
   doc_url: https://pypi.python.org/pypi/ansi2html/
-  doc_source_url: https://github.com/ralphbean/ansi2html/blob/develop/README.rst
-  dev_url: https://github.com/ralphbean/ansi2html/
+  doc_source_url: https://github.com/pycontribs/ansi2html/blob/master/README.rst
+  dev_url: https://github.com/pycontribs/ansi2html
 
 extra:
   recipe-maintainers:
