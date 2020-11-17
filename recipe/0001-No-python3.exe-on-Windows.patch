@@ -1,0 +1,25 @@
+From a256f7278326d1639d32d6dd523546ac1a4fbc7d Mon Sep 17 00:00:00 2001
+From: Nehal J Wani <nehaljw.kkd1@gmail.com>
+Date: Tue, 17 Nov 2020 11:21:25 -0500
+Subject: [PATCH] No python3.exe on Windows
+
+---
+ tests/test_ansi2html.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/tests/test_ansi2html.py b/tests/test_ansi2html.py
+index 5329266..ca459b6 100644
+--- a/tests/test_ansi2html.py
++++ b/tests/test_ansi2html.py
+@@ -391,7 +391,7 @@ class TestAnsi2HTML(unittest.TestCase):
+         assert result.returncode == 0
+ 
+     def test_command_module(self):
+-        result = run(["python3", "-m", "ansi2html", "--version"], check=True)
++        result = run(["python", "-m", "ansi2html", "--version"], check=True)
+         assert result.returncode == 0
+ 
+ 
+-- 
+2.26.2
+
