@@ -26,6 +26,7 @@ requirements:
     - python
     - setuptools
     - six
+    - importlib-metadata  # [py<38]
 
 test:
   source_files:
