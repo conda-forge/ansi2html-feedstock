@@ -40,7 +40,6 @@ test:
     - pytest tests/test_ansi2html.py
     - ansi2html --help
   requires:
-    - mock >=0.8
     - pytest
 
 about:
