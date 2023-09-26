@@ -37,11 +37,11 @@ test:
   imports:
     - ansi2html
   commands:
-    - python -m unittest tests/test_ansi2html.py
+    - pytest tests/test_ansi2html.py
     - ansi2html --help
   requires:
     - mock >=0.8
-    - nose
+    - pytest
 
 about:
   home: https://pypi.python.org/pypi/ansi2html
