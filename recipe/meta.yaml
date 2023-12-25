@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 5c6837a13ecc1903aab7a545353312049dfedfe5105362ad3a8d9d207871ec71
-  patches:
-    - 0001-No-python3.exe-on-Windows.patch
 
 build:
   number: 0
