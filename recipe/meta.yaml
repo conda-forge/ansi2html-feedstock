@@ -10,10 +10,15 @@ source:
   sha256: 3453bf87535d37b827b05245faaa756dbab4ec3d69925e352b6319c3c955c0a5
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<36]
   entry_points:
     - ansi2html=ansi2html.converter:main
+  # We need to patch the version seen by setuptools_scm,
+  # otherwise it will default to 0.0.0 which will be picked up by pip.
+  # https://conda-forge.org/docs/maintainer/knowledge_base/#using-setuptools_scm
+  script_env:
+    - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
@@ -23,6 +28,8 @@ requirements:
   host:
     - python
     - pip
+    - setuptools_scm[toml] >=7.0.0
+    - setuptools >=45.0.0
   run:
     - python
     - setuptools
