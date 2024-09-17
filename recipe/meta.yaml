@@ -10,7 +10,7 @@ source:
   sha256: 3453bf87535d37b827b05245faaa756dbab4ec3d69925e352b6319c3c955c0a5
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<36]
   entry_points:
     - ansi2html=ansi2html.converter:main
