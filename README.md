@@ -11,7 +11,7 @@ Summary: Convert text with ANSI color codes to HTML or to LaTeX.
 
 Development: https://github.com/pycontribs/ansi2html
 
-Documentation: https://pypi.python.org/pypi/ansi2html/
+Documentation: https://pypi.python.org/pypi/ansi2html
 
 ansi2html allows users to convert text with ANSI color codes
 to HTML or to Latex.
@@ -195,5 +195,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@bollwyvl](https://github.com/bollwyvl/)
 * [@nehaljwani](https://github.com/nehaljwani/)
 
